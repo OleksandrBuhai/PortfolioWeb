@@ -174,9 +174,7 @@
 
 @media (max-width: 768px) {
     .containerContent {
-        padding-left: 3rem;
-        align-items: center;
-        justify-content: center;
+        padding-left: 3.5rem;
     }
 
     .text {
