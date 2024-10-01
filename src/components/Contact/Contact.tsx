@@ -77,7 +77,7 @@ export const Contact: React.FC = () => {
   ];
 
   return (
-    <div className={styles.container} ref={ref} id="Contacts">
+    <div className={styles.container} ref={ref} id="Contact">
       <div className={styles.textFormWrapper}>
         <MotionDiv triggerRef={ref} delay={0.2}>
           <TitleHeader headerText="Contact me" />

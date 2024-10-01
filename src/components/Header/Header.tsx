@@ -11,12 +11,12 @@ export const Header: React.FC = () => {
     { id: 2, text: "About", link: "#About" },
     { id: 3, text: "Experience", link: "#Experience" },
     { id: 4, text: "Projects", link: "#Projects" },
-    { id: 5, text: "Contacts", link: "#Contacts" },
+    { id: 5, text: "Contact", link: "#Contact" },
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const elements = ["Main", "About", "Experience", "Contacts"];
+      const elements = ["Main", "About", "Experience", "Projects", "Contact"];
       const offset = window.innerHeight * 0.8;
 
       for (let i = elements.length - 1; i >= 0; i--) {
