@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
   const buttonData: Array<ButtonData> = [
     {
       type: "download",
-      url: "https://raw.githubusercontent.com/OleksandrBuhai/portfoliov2/main/src/assets/resume/Oleksandr_Buhai_CV.pdf",
+      url: "https://raw.githubusercontent.com/OleksandrBuhai/PortfolioWeb/main/src/assets/resume/Oleksandr_Buhai_CV.pdf",
       src: "/img/socialneb/assets/cv-icon.png",
       alt: "Download CV",
     },
