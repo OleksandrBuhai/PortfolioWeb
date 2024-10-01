@@ -177,14 +177,13 @@
         padding-left: 3.5rem;
     }
 
+    .buttonContainer img {
+        width: 25px;
+        height: 25px;
+    }
     .text {
 
         font-size: 2rem; 
     }
-    .greetText {
-        font-size: 4rem; 
-    }
-    .introText {
-        font-size: 2rem; 
-    }
+
 }
