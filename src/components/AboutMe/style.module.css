@@ -1,0 +1,39 @@
+.container {
+    background: linear-gradient(135deg, hsla(180, 4%, 9%, 1) 12%, hsla(283, 72%, 45%, 1) 54%, hsla(319, 84%, 7%, 1) 96%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 70rem;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+
+.container > :nth-child(1) {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+
+.description {
+
+}
+
+@media (max-width: 960px) {
+
+    .container {
+    }
+
+    .description {
+        padding: 2rem;
+    }
+
+    .photo {
+        display: none;
+    }
+}

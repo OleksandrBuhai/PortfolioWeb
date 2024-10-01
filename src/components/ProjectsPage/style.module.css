@@ -1,0 +1,83 @@
+
+  
+  .container {
+    height: 50rem;
+    width: 100%;
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 22%, hsla(280, 76%, 30%, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    padding: 10rem;
+    gap: 8rem;
+    justify-content: center;
+  }
+  
+  .decsriptionProject{
+    color: whitesmoke;
+  }
+
+.floatingShape {
+    position: absolute;
+    right: 10rem;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+
+.textContainer{
+    position: relative;
+    text-align: left;
+    width: 30rem;
+    color: whitesmoke;
+}
+
+.headerText {
+    font-size: 54px;
+}
+
+.description {
+
+}
+
+.textAccent {
+    color: rgb(241 48 36)
+}
+
+.sliderContainer{
+    max-width: 65%;
+}
+
+
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .textContainer{
+      padding-inline: 3rem;
+        text-align: center;
+    }
+    .sliderContainer{
+        
+        max-width: 100%;
+    }
+}

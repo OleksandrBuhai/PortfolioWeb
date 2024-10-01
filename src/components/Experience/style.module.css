@@ -1,0 +1,172 @@
+.credentials {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    width: 100%;
+    height: auto;
+    font-weight: 100;
+    background-color: #16171b;
+    color: whitesmoke;
+    border-radius: 10px;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative; 
+}
+
+.yearsText{
+    color: whitesmoke;
+}
+
+.header {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 0.5rem;
+    background: rgba(22, 23, 27, 0.8);
+}
+
+.blocks {
+    position: relative;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #444;
+    border-radius: 10px;
+    font-weight: 800;
+    height: 25rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blocks:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.blocks::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+.blocks::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    background-color: #EE6D52;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 1s ease, transform 1s ease;
+}
+
+.blocks:hover::after {
+    top: 0;
+}
+
+.showMoreButton {
+    position: absolute;
+    top: 80%;
+    color: #EE6D52;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.showMoreButton:hover {
+    color: #f07d6d;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    max-width: 90%;
+    width: 35rem;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.modalContent:hover {
+    transform: scale(1.02);
+}
+
+.modalContent h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #EE6D52;
+}
+
+.modalContent button {
+    margin-top: 2rem;
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+@keyframes slideInTopWithRotation {
+    0% {
+        transform: translateY(-1000%) translateX(-50%) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(800%) translateX(-50%) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50%) translateX(-50%) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 960px) {
+    .credentials {
+        grid-template-columns: 1fr;
+    }
+    .blocks {
+        height: 16rem;
+        width: 10rem;
+        font-size: 0.9rem;
+    }
+    .yesrsText {
+        font-size: 10px;
+    }
+}

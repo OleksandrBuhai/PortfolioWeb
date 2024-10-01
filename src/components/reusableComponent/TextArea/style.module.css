@@ -1,0 +1,55 @@
+.textareaWrapper {
+    position: relative;
+    width: 100%;
+    height: 16rem;
+}
+
+.textareaWrapper .label {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.textarea:focus~.label,
+.textarea:not(:placeholder-shown)~.label {
+    transform: translateY(-1.75rem);
+    font-size: 0.75rem;
+    color: white;
+}
+
+.textarea {
+    width: 100%;
+    height: 15rem;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    resize: none;
+}
+
+.errorBlock {
+    margin-top: 0.7rem;
+    height: 0.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.charCounter {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.75rem;
+    font-size: 0.85rem;
+    color: whitesmoke;
+    display: flex;
+}

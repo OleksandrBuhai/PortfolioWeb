@@ -1,0 +1,142 @@
+
+
+.swiperContainer {
+    max-width: 95%;
+    height: auto;
+
+    
+  }
+
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 20rem;
+    height: 11rem;
+    display: block;
+    transition: 0.5s ease;
+  }
+  .imageWrapper:hover .image {
+    transform: scale(1.2);
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, transparent, #e838cc, #4a22bd);
+    opacity: 0;
+    transition: opacity 0.7s ease;
+  }
+  
+  .imageWrapper:hover .overlay {
+    opacity: 0.8;
+  }
+  
+
+  .titleContainer {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 1s ease;
+  }
+  
+  .imageWrapper:hover .titleContainer {
+    transform: translateY(0%);
+  }
+  
+  
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.2em;
+  }
+  
+  
+  .titlePart1 {
+    font-weight: 900;
+    font-size: 20px;
+    transition-delay: 0.1s;
+    transform: translateY(1000%);
+    transition: transform 0.3s ease;
+    transition-delay: 0.3s;
+  }
+  .imageWrapper:hover .titlePart1{
+    transform: translateY(0);
+  }
+  
+  
+  .titlePart2 {
+    transform: translateY(500%);
+    font-weight: 700;
+    transition: transform 0.5s ease;
+    transition-delay: 0.5s;
+    font-size: 15px;
+    width: 50%;
+  }
+  
+  .imageWrapper:hover .titlePart2 {
+    transform: translateY(0);
+  }
+  
+  
+  .titleIcon {
+    font-size: 2.25rem;
+    transform: translateY(1000%);
+    transition: transform 1.2s ease;
+    transition-delay: 0.7s;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .titleIcon:hover {
+    color: #e838cc;
+    transform: scale(1.2rem);
+  }
+
+  .imageWrapper:hover .titleIcon {
+    transform: translateY(0);
+  }
+  
+
+  @media(max-width: 768px){
+    .titlePart1{
+      font-size: 15px;
+    }
+    .titlePart2{
+      font-size: 10px;
+    }
+    .titleIcon{
+      font-size: 2rem;
+    }
+  }
