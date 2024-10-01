@@ -173,10 +173,14 @@
 
 
 @media (max-width: 768px) {
-    .buttonContainer{
+    .containerContent {
         padding-left: 3rem;
+        align-items: center;
+        justify-content: center;
     }
+
     .text {
+
         font-size: 2rem; 
     }
     .greetText {
