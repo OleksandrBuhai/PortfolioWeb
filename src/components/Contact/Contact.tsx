@@ -58,13 +58,13 @@ export const Contact: React.FC = () => {
   const buttonData: Array<ButtonData> = [
     {
       type: "download",
-      url: "https://github.com/OleksandrBuhai/Portfolio/raw/main/src/assests/resume/Oleksandr_Buhai_CV.pdf",
+      url: "https://raw.githubusercontent.com/OleksandrBuhai/PortfolioWeb/main/src/assets/resume/Oleksandr_Buhai_CV.pdf",
       src: "/img/socialneb/assets/cv-icon.png",
       alt: "Download CV",
     },
     {
       type: "link",
-      url: "https://www.linkedin.com/in/oleksandrbuhai",
+      url: "https://www.linkedin.com/in/oleksandr-buhai-95a35227b/",
       src: "/img/socialneb/assets/linkedin.png",
       alt: "LinkedIn",
     },

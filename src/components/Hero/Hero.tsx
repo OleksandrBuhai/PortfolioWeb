@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
     },
     {
       type: "link",
-      url: "https://www.linkedin.com/in/oleksandrbuhai",
+      url: "https://www.linkedin.com/in/oleksandr-buhai-95a35227b/",
       src: "/img/socialneb/assets/linkedin.png",
       alt: "LinkedIn",
     },
