@@ -10,7 +10,7 @@
     background-color: black; 
     clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%); 
     transform: rotate(180deg);
-    translate: 120%;
+    translate: 110%;
     opacity: 0.8;
     transition: width 0.5s ease;
 }
@@ -55,6 +55,13 @@
     cursor: pointer;
     color: #EE6D52;
     filter: blur(0px);
+}
+
+@media (max-width: 1400px) {
+    .headerWrapper {
+        width: 50%;
+        translate: 50%;
+    }
 }
 
 

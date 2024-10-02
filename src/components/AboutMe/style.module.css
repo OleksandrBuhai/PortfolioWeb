@@ -27,13 +27,11 @@
 @media (max-width: 960px) {
 
     .container {
+
     }
 
     .description {
-        padding: 2rem;
+    
     }
 
-    .photo {
-        display: none;
-    }
 }
