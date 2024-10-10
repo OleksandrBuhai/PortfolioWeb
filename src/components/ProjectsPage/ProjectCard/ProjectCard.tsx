@@ -29,8 +29,7 @@ export const ProjectsCard: React.FC = () => {
           name: "Giftify",
           picture: "/img/projectsImg/giftify.png",
           text: "Service for personalized online greetings and quests",
-          gitHubLink:
-            "https://github.com/OleksandrBuhai/UI_DESIGN_SALES_ANALYTYC",
+          gitHubLink: "https://giftify.quest/",
         },
         {
           name: "Gym Website",
